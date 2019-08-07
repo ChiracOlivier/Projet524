@@ -2,6 +2,7 @@ package com.company;
 
 import org.jetbrains.annotations.Contract;
 
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Main {
@@ -12,14 +13,19 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        int entier = 0;
-        System.out.println("Bienvenue dans ce jeu  épique!!!\n Création du personnage Joueur1\n");
+        int entree1 = 0,entree2= 0;
+        System.out.println("Bienvenue dans ce jeu  épique!!!\n");
+        System.out.println("Choississez votre mode :\n 1: 1 joueur\n 2: 2 joueurs\n");
+
+        if (entree1==1){
+            Joueur1 joueur1= new Joueur1();
+        }
 
         do {
             System.out.println("Veuillez choisir la classe de votre personnage (1: Guerrier,  2: Rodeur, 3: Mage) \n");
-            entier = sc.nextInt();
+            entree2 = sc.nextInt();
 
-            switch (entier) {
+            switch (entree2) {
                 case 1:
                     Guerrier GuerrierUn = new Guerrier();
                     GuerrierUn.toString();
@@ -38,6 +44,6 @@ public class Main {
 
             }
         }
-        while ((entier != 1) && (entier != 2) && (entier != 3));
+        while ((entree2 != 1) && (entree2 != 2) && (entree2 != 3));
     }
 }
