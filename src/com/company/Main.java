@@ -19,6 +19,9 @@ public class Main {
 
         if (entree1==1){
             Joueur1 joueur1= new Joueur1();
+        }else {
+            Joueur1 joueur1= new Joueur1();
+            Joueur2 joueur2 = new Joueur2();
         }
 
         do {
