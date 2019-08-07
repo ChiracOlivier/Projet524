@@ -24,29 +24,6 @@ public class Main {
             Joueur2 joueur2 = new Joueur2();
         }
 
-        do {
-            System.out.println("Veuillez choisir la classe de votre personnage (1: Guerrier,  2: Rodeur, 3: Mage) \n");
-            entree2 = sc.nextInt();
-
-            switch (entree2) {
-                case 1:
-                    Guerrier GuerrierUn = new Guerrier();
-                    GuerrierUn.toString();
-                    break;
-                case 2:
-                    Rodeur RodeurUn = new Rodeur();
-                    RodeurUn.toString();
-                    break;
-                case 3:
-                    Mage MageUn = new Mage();
-                    MageUn.toString();
-                    break;
-                default:
-                    System.out.println("Vous avez choisi un personnage Inconnu!!!\n");
-                    break;
-
-            }
-        }
-        while ((entree2 != 1) && (entree2 != 2) && (entree2 != 3));
+      
     }
 }
