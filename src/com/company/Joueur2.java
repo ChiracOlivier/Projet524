@@ -1,12 +1,16 @@
 package com.company;
 
+import java.util.Scanner;
+
 public class Joueur2 {
     public Joueur2() {
         System.out.println(" Création du personnage Joueur2...\n");
 
     }
 
-  public void choisirClassePersonnage() {
+  void choisirClassePersonnage() {
+        int entree2;
+      Scanner sc = new Scanner(System.in);
       do {
           System.out.println("Veuillez choisir la classe de votre personnage (1: Guerrier,  2: Rodeur, 3: Mage) \n");
           entree2 = sc.nextInt();

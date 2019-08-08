@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Scanner;
+
 public class Joueur1 {
     public Joueur1() {
         System.out.println(" Création du personnage Joueur1...\n");
@@ -8,8 +10,9 @@ public class Joueur1 {
 
 
 
-    public void choisirClassePersonnage() {
-        int entree2=0;
+    void choisirClassePersonnage() {
+        int entree2;
+        Scanner sc= new Scanner(System.in);
         do {
             System.out.println("Veuillez choisir la classe de votre personnage (1: Guerrier,  2: Rodeur, 3: Mage) \n");
             entree2 = sc.nextInt();
