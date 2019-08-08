@@ -24,6 +24,6 @@ public class Main {
             Joueur2 joueur2 = new Joueur2();
         }
 
-      
+
     }
 }
