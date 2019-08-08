@@ -6,12 +6,9 @@ public class Joueur1 {
 
     }
 
-    @Override
-    public String toString() {
-        return super.toString();
-    }
 
-    public choisirClassePersonnage() {
+
+    public void choisirClassePersonnage() {
         int entree2=0;
         do {
             System.out.println("Veuillez choisir la classe de votre personnage (1: Guerrier,  2: Rodeur, 3: Mage) \n");
@@ -37,5 +34,10 @@ public class Joueur1 {
             }
         }
         while ((entree2 != 1) && (entree2 != 2) && (entree2 != 3));
+    }
+
+    @Override
+    public String toString() {
+        return super.toString();
     }
 }
