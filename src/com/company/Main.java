@@ -27,7 +27,5 @@ public class Main {
             joueur2.choisirClassePersonnage();
         }
 
-        System.out.println("Bonjour ");
-
     }
 }
