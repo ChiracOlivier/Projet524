@@ -1,11 +1,12 @@
 package com.company;
 
-import org.jetbrains.annotations.Contract;
+//import org.jetbrains.annotations.Contract;
 
-public class Guerrier {
+public class Guerrier extends Joueur{
 
 
     public Guerrier() {
+
         System.out.println("Bonjour Guerrier");
     }
 

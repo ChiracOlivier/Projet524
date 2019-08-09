@@ -2,25 +2,25 @@ package com.company;
 
 import java.util.Scanner;
 
-public class Joueur1 {
-    public Joueur1() {
-        System.out.println(" Création du personnage Joueur1...\n");
+public class Joueur {
+    public Joueur() {
+
+        System.out.println("Veuillez choisir la classe de votre personnage (1: Guerrier,  2: Rodeur, 3: Mage) ");
 
     }
 
 
-
-    void choisirClassePersonnage() {
+    public void classePersonnage() {
         int entree2;
         Scanner sc= new Scanner(System.in);
+        entree2 = sc.nextInt();
+
         do {
-            System.out.println("Veuillez choisir la classe de votre personnage (1: Guerrier,  2: Rodeur, 3: Mage) \n");
-            entree2 = sc.nextInt();
 
             switch (entree2) {
                 case 1:
                     Guerrier GuerrierUn = new Guerrier();
-                    GuerrierUn.toString();
+                    GuerrierUn.caractéristiquesPersonnage();
                     break;
                 case 2:
                     Rodeur RodeurUn = new Rodeur();
@@ -31,12 +31,17 @@ public class Joueur1 {
                     MageUn.toString();
                     break;
                 default:
-                    System.out.println("Vous avez choisi un personnage Inconnu!!!\n");
+                    System.out.println("Vous avez choisi un personnage Inconnu!!! Veuillez choisir (1: Guerrier,  2: Rodeur, 3: Mage) \n");
                     break;
 
             }
         }
         while ((entree2 != 1) && (entree2 != 2) && (entree2 != 3));
+    }
+
+    public void caractéristiquesPersonnage() {
+
+        System.out.println("Niveau du personnage ?");
     }
 
     @Override
