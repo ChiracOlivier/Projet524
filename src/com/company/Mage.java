@@ -1,9 +1,14 @@
 package com.company;
 
-public class Mage {
+public class Mage extends  Personnage {
 
     public Mage() {
-        System.out.println("Bonjour Mage");
+        System.out.println("Abracadabra je suis le  Mage");
+    }
+
+    @Override
+    public void Caracteristics() {
+        super.Caracteristics();
     }
 
     /**

@@ -20,11 +20,20 @@ public class Main {
         if (entree1==1){
             Joueur1 joueur1= new Joueur1();
             joueur1.choisirClassePersonnage();
+            joueur1.Caracteristics();
+            System.out.println("début du jeu!!!");
+            joueur1.affiche();
         }else {
             Joueur1 joueur1= new Joueur1();
             joueur1.choisirClassePersonnage();
+            joueur1.Caracteristics();
+            joueur1.affiche();
             Joueur2 joueur2 = new Joueur2();
             joueur2.choisirClassePersonnage();
+            joueur2.Caracteristics();
+            joueur2.affiche();
+            System.out.println("début du jeu!!!");
+
         }
 
 

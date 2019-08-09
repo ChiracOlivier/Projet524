@@ -2,11 +2,16 @@ package com.company;
 
 import org.jetbrains.annotations.Contract;
 
-public class Guerrier {
+import java.util.Scanner;
 
+public class Guerrier extends Personnage {
+    public Guerrier(){
+        System.out.println("Woarg je suis le Guerrier");
+    }
 
-    public Guerrier() {
-        System.out.println("Bonjour Guerrier");
+    @Override
+    public void Caracteristics() {
+        super.Caracteristics();
     }
 
     /**

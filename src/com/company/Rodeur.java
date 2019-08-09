@@ -1,10 +1,15 @@
 package com.company;
 
-public class Rodeur {
+public class Rodeur extends Personnage {
 
     public Rodeur() {
 
-        System.out.println("Bonjour Rodeur");
+        System.out.println("ohohoh je suis le Rodeur");
+    }
+
+    @Override
+    public void Caracteristics() {
+        super.Caracteristics();
     }
 
     /**
