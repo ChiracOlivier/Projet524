@@ -3,14 +3,28 @@ package com.company;
 import java.util.Scanner;
 
 public class Personnage {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     private Scanner sc1 = new Scanner(System.in);
-    public int niveau, force, agilité, Intelligence;
+    public int niveau, force, agilité, Intelligence,vie, classePersonnage ;
 
 
-    void choisirClassePersonnage() {
+     Personnage() {
         int entree2;
         Scanner sc = new Scanner(System.in);
-
         do {
             System.out.println("Veuillez choisir la classe de votre personnage (1: Guerrier,  2: Rodeur, 3: Mage) \n");
             entree2 = sc.nextInt();
@@ -41,6 +55,7 @@ public class Personnage {
 
         System.out.println("Niveau du personnage ??");
         niveau= sc1.nextInt();
+        vie= niveau*5;
         System.out.println("Force du personnage ??");
         force= sc1.nextInt();
         System.out.println("agilité du personnage ??");
@@ -50,8 +65,5 @@ public class Personnage {
 
     }
 
-    public void attaque(){
-        System.out.println(" ");
-    }
 
 }

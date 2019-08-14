@@ -1,6 +1,6 @@
 package com.company;
 
-public class Mage extends  Personnage {
+public class Mage extends  Joueur1 {
 
     public Mage() {
         System.out.println("Abracadabra je suis le  Mage");

@@ -1,8 +1,8 @@
 package com.company;
 
-public class Rodeur extends Joueur1 {
+public class Rodeur2 extends Joueur2 {
 
-    public Rodeur() {
+    public Rodeur2() {
 
         System.out.println("ohohoh je suis le Rodeur");
     }
@@ -20,3 +20,4 @@ public class Rodeur extends Joueur1 {
         return "Rodeur{}";
     }
 }
+

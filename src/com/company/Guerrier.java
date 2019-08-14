@@ -4,7 +4,7 @@ import org.jetbrains.annotations.Contract;
 
 import java.util.Scanner;
 
-public class Guerrier extends Personnage {
+public class Guerrier extends Joueur1 {
     public Guerrier(){
         System.out.println("Woarg je suis le Guerrier");
     }
@@ -14,11 +14,6 @@ public class Guerrier extends Personnage {
         super.Caracteristics();
     }
 
-    /**
-     * @return
-     */
-    @Override
-    public String toString() {
-        return "Guerrier{}";
-    }
+
+}
 }
